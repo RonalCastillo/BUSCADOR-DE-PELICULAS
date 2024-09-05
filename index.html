@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">Mi Sitio</a>
+      </div>
+      <div class="nav">
+        <nav>
+          <a id="populares-link" href="#">Populares</a>
+          <a id="proximo-link" href="#">Proximamente</a>
+
+          <a id="cartelera-link" href="#">Cartelera</a>
+        </nav>
+      </div>
+      <div class="menu-toggle">&#9776;</div>
+    </header>
+    <div class="contenedor">
+      <h1 class="titulo">Movies</h1>
+
+      <div class="buscador">
+        <div class="form">
+          <div class="form-inpt">
+            <input
+              class="inp-buscador"
+              id="buscar"
+              type="text"
+              placeholder="Buscar película..."
+            />
+
+            <button class="btn-buscador" id="buscarBoton">Buscar</button>
+          </div>
+          <ul id="sugerencias" class="sugerencias"></ul>
+        </div>
+        <div class="help" id="help"></div>
+        <div class="alerta">
+          <span></span>
+        </div>
+      </div>
+      <div id="error" class="error" style="color: red;"></div>
+      <div id="list_pelis" class="list-peliculas"></div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
